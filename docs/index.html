@@ -80,7 +80,8 @@
 <li><a class="reference internal" href="#plot-aggregated-features">plot aggregated features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#Creating-a-GeoDataFrame-from-a-DataFrame-with-coordinates">Creating a GeoDataFrame from a DataFrame with coordinates</a><ul>
+<li><a class="reference internal" href="#Creating-a-GeoDataFrame-from-a-DataFrame-with-coordinates">Creating a GeoDataFrame from a DataFrame with coordinates</a></li>
+<li><a class="reference internal" href="#Plot-geodataframe-coordinates-over-a-state-level-map-of-Florida">Plot geodataframe coordinates over a state-level map of Florida</a><ul>
 <li><a class="reference internal" href="#plot-a-specific-column">plot a specific column</a></li>
 </ul>
 </li>
@@ -101,7 +102,7 @@
             
               <li class="hidden-sm">
 <div id="sourcelink">
-  <a href="_sources/geopandas-101-Copy1.ipynb.txt"
+  <a href="_sources/geopandas-101a.ipynb.txt"
      rel="nofollow">Source</a>
 </div></li>
             
@@ -142,7 +143,8 @@
 <li><a class="reference internal" href="#plot-aggregated-features">plot aggregated features</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#Creating-a-GeoDataFrame-from-a-DataFrame-with-coordinates">Creating a GeoDataFrame from a DataFrame with coordinates</a><ul>
+<li><a class="reference internal" href="#Creating-a-GeoDataFrame-from-a-DataFrame-with-coordinates">Creating a GeoDataFrame from a DataFrame with coordinates</a></li>
+<li><a class="reference internal" href="#Plot-geodataframe-coordinates-over-a-state-level-map-of-Florida">Plot geodataframe coordinates over a state-level map of Florida</a><ul>
 <li><a class="reference internal" href="#plot-a-specific-column">plot a specific column</a></li>
 </ul>
 </li>
@@ -151,7 +153,7 @@
 </ul>
 
 <div id="sourcelink">
-  <a href="_sources/geopandas-101-Copy1.ipynb.txt"
+  <a href="_sources/geopandas-101a.ipynb.txt"
      rel="nofollow">Source</a>
 </div>
 <form action="search.html" method="get">
@@ -1627,7 +1629,7 @@ countries.head()
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_42_0.png" src="_images/geopandas-101-Copy1_42_0.png" />
+<img alt="_images/geopandas-101a_42_0.png" src="_images/geopandas-101a_42_0.png" />
 </div>
 </div>
 <p><strong>make sub-selections of a DataFrame</strong> For example, if we only want the countries with the <code class="docutils literal notranslate"><span class="pre">CONTINENT</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">Europe</span></code>, we can select those, assign them to a new variable, and even write them back out to disk as a GeoJSON:</p>
@@ -2053,7 +2055,7 @@ europe.plot(figsize=(15,15));
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_54_0.png" src="_images/geopandas-101-Copy1_54_0.png" />
+<img alt="_images/geopandas-101a_54_0.png" src="_images/geopandas-101a_54_0.png" />
 </div>
 </div>
 <p>The output is not a particularly helpful visual (pretending that our intent is to focus on continental Europe):</p>
@@ -2072,7 +2074,7 @@ ax.set(xlim=(-15,45), ylim=(30,73));
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_57_0.png" src="_images/geopandas-101-Copy1_57_0.png" />
+<img alt="_images/geopandas-101a_57_0.png" src="_images/geopandas-101a_57_0.png" />
 </div>
 </div>
 </div>
@@ -2112,7 +2114,7 @@ europe.crs
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_62_0.png" src="_images/geopandas-101-Copy1_62_0.png" />
+<img alt="_images/geopandas-101a_62_0.png" src="_images/geopandas-101a_62_0.png" />
 </div>
 </div>
 <p><strong>create a new GeoDataFrame of Portugal</strong> by slicing it from the europe GeoDataFrame (and remove Portugal from europe):</p>
@@ -2190,7 +2192,7 @@ europe = europe[europe[&#39;ADMIN&#39;] != &quot;Portugal&quot;]
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_67_0.png" src="_images/geopandas-101-Copy1_67_0.png" />
+<img alt="_images/geopandas-101a_67_0.png" src="_images/geopandas-101a_67_0.png" />
 </div>
 </div>
 <div class="line-block">
@@ -2213,7 +2215,7 @@ portugal.plot(ax=base, color=&#39;#5496c2&#39;);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_69_0.png" src="_images/geopandas-101-Copy1_69_0.png" />
+<img alt="_images/geopandas-101a_69_0.png" src="_images/geopandas-101a_69_0.png" />
 </div>
 </div>
 </div>
@@ -2287,7 +2289,7 @@ portugal.crs
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_80_0.png" src="_images/geopandas-101-Copy1_80_0.png" />
+<img alt="_images/geopandas-101a_80_0.png" src="_images/geopandas-101a_80_0.png" />
 </div>
 </div>
 </div>
@@ -2329,7 +2331,7 @@ add_basemap(ax=base, zoom=11)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_84_0.png" src="_images/geopandas-101-Copy1_84_0.png" />
+<img alt="_images/geopandas-101a_84_0.png" src="_images/geopandas-101a_84_0.png" />
 </div>
 </div>
 <p><strong>select a smaller area for quicker results</strong></p>
@@ -2357,7 +2359,7 @@ portugal.plot(ax=base, color=&#39;#5496c2&#39;)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_86_1.png" src="_images/geopandas-101-Copy1_86_1.png" />
+<img alt="_images/geopandas-101a_86_1.png" src="_images/geopandas-101a_86_1.png" />
 </div>
 </div>
 </div>
@@ -2378,7 +2380,7 @@ add_basemap(ax=base, zoom=11)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_88_0.png" src="_images/geopandas-101-Copy1_88_0.png" />
+<img alt="_images/geopandas-101a_88_0.png" src="_images/geopandas-101a_88_0.png" />
 </div>
 </div>
 <p><strong>Portugual - the island of</strong><a class="reference external" href="https://en.wikipedia.org/wiki/Madeira">Madeira</a></p>
@@ -2397,7 +2399,7 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_90_0.png" src="_images/geopandas-101-Copy1_90_0.png" />
+<img alt="_images/geopandas-101a_90_0.png" src="_images/geopandas-101a_90_0.png" />
 </div>
 </div>
 </div>
@@ -2428,7 +2430,7 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_95_0.png" src="_images/geopandas-101-Copy1_95_0.png" />
+<img alt="_images/geopandas-101a_95_0.png" src="_images/geopandas-101a_95_0.png" />
 </div>
 </div>
 <div class="line-block">
@@ -2448,7 +2450,7 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_97_0.png" src="_images/geopandas-101-Copy1_97_0.png" />
+<img alt="_images/geopandas-101a_97_0.png" src="_images/geopandas-101a_97_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -2474,7 +2476,7 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_98_1.png" src="_images/geopandas-101-Copy1_98_1.png" />
+<img alt="_images/geopandas-101a_98_1.png" src="_images/geopandas-101a_98_1.png" />
 </div>
 </div>
 </div>
@@ -2507,7 +2509,7 @@ df = geopandas.read_file(path)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_102_0.png" src="_images/geopandas-101-Copy1_102_0.png" />
+<img alt="_images/geopandas-101a_102_0.png" src="_images/geopandas-101a_102_0.png" />
 </div>
 </div>
 <p><strong>Orthographic</strong></p>
@@ -2527,7 +2529,7 @@ ax.outline_patch.set_visible(True)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_104_0.png" src="_images/geopandas-101-Copy1_104_0.png" />
+<img alt="_images/geopandas-101a_104_0.png" src="_images/geopandas-101a_104_0.png" />
 </div>
 </div>
 <p><strong>PlateCarree</strong></p>
@@ -2550,7 +2552,7 @@ ax.outline_patch.set_visible(True);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_106_0.png" src="_images/geopandas-101-Copy1_106_0.png" />
+<img alt="_images/geopandas-101a_106_0.png" src="_images/geopandas-101a_106_0.png" />
 </div>
 </div>
 <p><strong>PlateCarree on 180 longitude</strong></p>
@@ -2582,7 +2584,7 @@ left=0.0, right=0.0
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_108_1.png" src="_images/geopandas-101-Copy1_108_1.png" />
+<img alt="_images/geopandas-101a_108_1.png" src="_images/geopandas-101a_108_1.png" />
 </div>
 </div>
 <p><strong>AlbersEqualArea</strong></p>
@@ -2603,7 +2605,7 @@ ax.outline_patch.set_visible(True);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_110_0.png" src="_images/geopandas-101-Copy1_110_0.png" />
+<img alt="_images/geopandas-101a_110_0.png" src="_images/geopandas-101a_110_0.png" />
 </div>
 </div>
 <p><strong>Robinson</strong></p>
@@ -2624,7 +2626,7 @@ ax.outline_patch.set_visible(True);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_112_0.png" src="_images/geopandas-101-Copy1_112_0.png" />
+<img alt="_images/geopandas-101a_112_0.png" src="_images/geopandas-101a_112_0.png" />
 </div>
 </div>
 <p><strong>see more</strong><a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest/crs/projections.html">here</a></p>
@@ -2959,7 +2961,7 @@ continents  # display the entire dataframe
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_123_0.png" src="_images/geopandas-101-Copy1_123_0.png" />
+<img alt="_images/geopandas-101a_123_0.png" src="_images/geopandas-101a_123_0.png" />
 </div>
 </div>
 <p><strong>add color based on the pop_est for each continent display legend to the right of the plot</strong></p>
@@ -2984,7 +2986,7 @@ continents.plot(ax=ax, column = &#39;POP_EST&#39;, cmap=&#39;YlOrRd&#39;, alpha=
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_126_0.png" src="_images/geopandas-101-Copy1_126_0.png" />
+<img alt="_images/geopandas-101a_126_0.png" src="_images/geopandas-101a_126_0.png" />
 </div>
 </div>
 </div>
@@ -3715,7 +3717,9 @@ gdf.head()
 </pre></div>
 </div>
 </div>
-<p>#### Plot geodataframe coordinates over a state-level map of Florida</p>
+</div>
+<div class="section" id="Plot-geodataframe-coordinates-over-a-state-level-map-of-Florida">
+<h3>Plot geodataframe coordinates over a state-level map of Florida<a class="headerlink" href="#Plot-geodataframe-coordinates-over-a-state-level-map-of-Florida" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
@@ -3747,7 +3751,7 @@ gdf.plot(ax=ax, linewidth=0.25, markersize=3.0, column = &#39;tiv_total_inc_dec&
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_151_0.png" src="_images/geopandas-101-Copy1_151_0.png" />
+<img alt="_images/geopandas-101a_151_0.png" src="_images/geopandas-101a_151_0.png" />
 </div>
 </div>
 <hr class="docutils" />
