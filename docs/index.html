@@ -1098,12 +1098,10 @@ type(geoms)
 </pre></div>
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 <div class="section" id="GeoSeries-attributes">
 <h3>GeoSeries attributes<a class="headerlink" href="#GeoSeries-attributes" title="Permalink to this headline">¶</a></h2>
 <p>For a full list of all available attributes see the <a class="reference external" href="http://geopandas.org/reference.html">GeoSeries Reference</a></p>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <div class="line-block">
 <div class="line"><strong>area</strong></div>
 <div class="line">List the area of all the countries in the <code class="docutils literal notranslate"><span class="pre">countries</span></code> dataset</div>
@@ -1131,7 +1129,6 @@ dtype: float64
 </pre></div>
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <div class="line-block">
 <div class="line"><strong>bounds</strong></div>
 <div class="line">tuple of max and min coordinates on each axs to each shape</div>
@@ -1214,7 +1211,6 @@ dtype: float64
 </table>
 </div></div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <div class="line-block">
 <div class="line"><strong>area bounds is_valid crs and centroid use examples</strong></div>
 <div class="line"><code class="docutils literal notranslate"><span class="pre">area:</span></code> shape area (units of projection – see <a class="reference external" href="http://geopandas.org/projections.html">projections</a></div>
@@ -1253,7 +1249,6 @@ centroid:  195    POINT (103.8190731458241 36.56176537925268)
 dtype: object
 </pre></div></div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 <div class="section" id="Toward-mapping---a-basic-GeoPandas-workflow">
 <h3>Toward mapping - a basic GeoPandas workflow<a class="headerlink" href="#Toward-mapping---a-basic-GeoPandas-workflow" title="Permalink to this headline">¶</a></h2>
@@ -1374,7 +1369,6 @@ countries.head()
 <p>0 rows × 95 columns</p>
 </div></div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 <div class="section" id="Writing-GeoJSON-to-file">
 <h3>Writing GeoJSON to file<a class="headerlink" href="#Writing-GeoJSON-to-file" title="Permalink to this headline">¶</a></h2>
@@ -1616,7 +1610,6 @@ countries.head()
 </pre></div>
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 <div class="section" id="Plotting-geospatial-data">
 <h3>Plotting geospatial data<a class="headerlink" href="#Plotting-geospatial-data" title="Permalink to this headline">¶</a></h2>
@@ -1634,10 +1627,9 @@ countries.head()
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_49_0.png" src="_images/geopandas-101-Copy1_49_0.png" />
+<img alt="_images/geopandas-101-Copy1_42_0.png" src="_images/geopandas-101-Copy1_42_0.png" />
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>make sub-selections of a DataFrame</strong> For example, if we only want the countries with the <code class="docutils literal notranslate"><span class="pre">CONTINENT</span></code> attribute of <code class="docutils literal notranslate"><span class="pre">Europe</span></code>, we can select those, assign them to a new variable, and even write them back out to disk as a GeoJSON:</p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -1821,7 +1813,6 @@ europe.head()
 <p>5 rows × 96 columns</p>
 </div></div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>write sub-selection to shapefile</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -2024,7 +2015,6 @@ europe.head()
 <p>5 rows × 95 columns</p>
 </div></div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>check if json data file exist and delete if exist</strong></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -2036,7 +2026,6 @@ europe.head()
 </pre></div>
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>write sub-selection to geojson</strong></p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
@@ -2064,11 +2053,10 @@ europe.plot(figsize=(15,15));
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_65_0.png" src="_images/geopandas-101-Copy1_65_0.png" />
+<img alt="_images/geopandas-101-Copy1_54_0.png" src="_images/geopandas-101-Copy1_54_0.png" />
 </div>
 </div>
 <p>The output is not a particularly helpful visual (pretending that our intent is to focus on continental Europe):</p>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>set X and Y axis limits with Matplotlib</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
@@ -2084,10 +2072,9 @@ ax.set(xlim=(-15,45), ylim=(30,73));
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_69_0.png" src="_images/geopandas-101-Copy1_69_0.png" />
+<img alt="_images/geopandas-101-Copy1_57_0.png" src="_images/geopandas-101-Copy1_57_0.png" />
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 <div class="section" id="Adjusting-and-managing-projections">
 <h3>Adjusting and managing projections<a class="headerlink" href="#Adjusting-and-managing-projections" title="Permalink to this headline">¶</a></h2>
@@ -2125,10 +2112,9 @@ europe.crs
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_75_0.png" src="_images/geopandas-101-Copy1_75_0.png" />
+<img alt="_images/geopandas-101-Copy1_62_0.png" src="_images/geopandas-101-Copy1_62_0.png" />
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>create a new GeoDataFrame of Portugal</strong> by slicing it from the europe GeoDataFrame (and remove Portugal from europe):</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -2140,7 +2126,6 @@ europe = europe[europe[&#39;ADMIN&#39;] != &quot;Portugal&quot;]
 </pre></div>
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>plot Portugal</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -2205,10 +2190,9 @@ europe = europe[europe[&#39;ADMIN&#39;] != &quot;Portugal&quot;]
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_82_0.png" src="_images/geopandas-101-Copy1_82_0.png" />
+<img alt="_images/geopandas-101-Copy1_67_0.png" src="_images/geopandas-101-Copy1_67_0.png" />
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <div class="line-block">
 <div class="line"><strong>add the Europe GeoDataFrame as the basemap</strong></div>
 <div class="line">plot Portugal on top of it, using some basic color properties to help create figure-ground</div>
@@ -2229,12 +2213,11 @@ portugal.plot(ax=base, color=&#39;#5496c2&#39;);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_85_0.png" src="_images/geopandas-101-Copy1_85_0.png" />
+<img alt="_images/geopandas-101-Copy1_69_0.png" src="_images/geopandas-101-Copy1_69_0.png" />
+</div>
 </div>
 </div>
 <hr class="docutils" />
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
-</div>
 <div class="section" id="Adding-a-background-tile-map-to-plots">
 <h3>Adding a background tile map to plots<a class="headerlink" href="#Adding-a-background-tile-map-to-plots" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://geopandas.org/gallery/plotting_basemap_background.html">GeoPandas 0.4.0 documentation</a></p>
@@ -2304,7 +2287,7 @@ portugal.crs
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_96_0.png" src="_images/geopandas-101-Copy1_96_0.png" />
+<img alt="_images/geopandas-101-Copy1_80_0.png" src="_images/geopandas-101-Copy1_80_0.png" />
 </div>
 </div>
 </div>
@@ -2346,7 +2329,7 @@ add_basemap(ax=base, zoom=11)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_100_0.png" src="_images/geopandas-101-Copy1_100_0.png" />
+<img alt="_images/geopandas-101-Copy1_84_0.png" src="_images/geopandas-101-Copy1_84_0.png" />
 </div>
 </div>
 <p><strong>select a smaller area for quicker results</strong></p>
@@ -2374,7 +2357,7 @@ portugal.plot(ax=base, color=&#39;#5496c2&#39;)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_102_1.png" src="_images/geopandas-101-Copy1_102_1.png" />
+<img alt="_images/geopandas-101-Copy1_86_1.png" src="_images/geopandas-101-Copy1_86_1.png" />
 </div>
 </div>
 </div>
@@ -2395,7 +2378,7 @@ add_basemap(ax=base, zoom=11)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_104_0.png" src="_images/geopandas-101-Copy1_104_0.png" />
+<img alt="_images/geopandas-101-Copy1_88_0.png" src="_images/geopandas-101-Copy1_88_0.png" />
 </div>
 </div>
 <p><strong>Portugual - the island of</strong><a class="reference external" href="https://en.wikipedia.org/wiki/Madeira">Madeira</a></p>
@@ -2414,12 +2397,11 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_106_0.png" src="_images/geopandas-101-Copy1_106_0.png" />
+<img alt="_images/geopandas-101-Copy1_90_0.png" src="_images/geopandas-101-Copy1_90_0.png" />
+</div>
 </div>
 </div>
 <hr class="docutils" />
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
-</div>
 <div class="section" id="Plotting-with-Geoplot-and-GeoPandas">
 <h3>Plotting with Geoplot and GeoPandas<a class="headerlink" href="#Plotting-with-Geoplot-and-GeoPandas" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://geopandas.org/gallery/plotting_with_geoplot.html#sphx-glr-gallery-plotting-with-geoplot-py">GeoPandas 0.4.0 documentation</a></p>
@@ -2446,7 +2428,7 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_111_0.png" src="_images/geopandas-101-Copy1_111_0.png" />
+<img alt="_images/geopandas-101-Copy1_95_0.png" src="_images/geopandas-101-Copy1_95_0.png" />
 </div>
 </div>
 <div class="line-block">
@@ -2466,7 +2448,7 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_113_0.png" src="_images/geopandas-101-Copy1_113_0.png" />
+<img alt="_images/geopandas-101-Copy1_97_0.png" src="_images/geopandas-101-Copy1_97_0.png" />
 </div>
 </div>
 <div class="nbinput docutils container">
@@ -2492,10 +2474,9 @@ add_basemap(ax=base, zoom=10)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_114_1.png" src="_images/geopandas-101-Copy1_114_1.png" />
+<img alt="_images/geopandas-101-Copy1_98_1.png" src="_images/geopandas-101-Copy1_98_1.png" />
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 <div class="section" id="Re-project-data-into-any-of-the-map-projections-provided-by-CartoPy">
 <h3>Re-project data into any of the map projections provided by CartoPy<a class="headerlink" href="#Re-project-data-into-any-of-the-map-projections-provided-by-CartoPy" title="Permalink to this headline">¶</a></h2>
@@ -2526,7 +2507,7 @@ df = geopandas.read_file(path)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_119_0.png" src="_images/geopandas-101-Copy1_119_0.png" />
+<img alt="_images/geopandas-101-Copy1_102_0.png" src="_images/geopandas-101-Copy1_102_0.png" />
 </div>
 </div>
 <p><strong>Orthographic</strong></p>
@@ -2546,7 +2527,7 @@ ax.outline_patch.set_visible(True)
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_121_0.png" src="_images/geopandas-101-Copy1_121_0.png" />
+<img alt="_images/geopandas-101-Copy1_104_0.png" src="_images/geopandas-101-Copy1_104_0.png" />
 </div>
 </div>
 <p><strong>PlateCarree</strong></p>
@@ -2569,7 +2550,7 @@ ax.outline_patch.set_visible(True);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_123_0.png" src="_images/geopandas-101-Copy1_123_0.png" />
+<img alt="_images/geopandas-101-Copy1_106_0.png" src="_images/geopandas-101-Copy1_106_0.png" />
 </div>
 </div>
 <p><strong>PlateCarree on 180 longitude</strong></p>
@@ -2601,7 +2582,7 @@ left=0.0, right=0.0
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_125_1.png" src="_images/geopandas-101-Copy1_125_1.png" />
+<img alt="_images/geopandas-101-Copy1_108_1.png" src="_images/geopandas-101-Copy1_108_1.png" />
 </div>
 </div>
 <p><strong>AlbersEqualArea</strong></p>
@@ -2622,7 +2603,7 @@ ax.outline_patch.set_visible(True);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_127_0.png" src="_images/geopandas-101-Copy1_127_0.png" />
+<img alt="_images/geopandas-101-Copy1_110_0.png" src="_images/geopandas-101-Copy1_110_0.png" />
 </div>
 </div>
 <p><strong>Robinson</strong></p>
@@ -2643,13 +2624,12 @@ ax.outline_patch.set_visible(True);
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_129_0.png" src="_images/geopandas-101-Copy1_129_0.png" />
+<img alt="_images/geopandas-101-Copy1_112_0.png" src="_images/geopandas-101-Copy1_112_0.png" />
 </div>
 </div>
 <p><strong>see more</strong><a class="reference external" href="http://scitools.org.uk/cartopy/docs/latest/crs/projections.html">here</a></p>
-<hr class="docutils" />
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
+<hr class="docutils" />
 <div class="section" id="Aggregate-geometric-features">
 <h3>Aggregate geometric features<a class="headerlink" href="#Aggregate-geometric-features" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="http://geopandas.org/aggregation_with_dissolve.html">GeoPandas 0.4.0 documentation</a></p>
@@ -2685,7 +2665,6 @@ plt.style.use(&#39;classic&#39;)
 </pre></div>
 </div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <p><strong>aggregate the geodataframe by continents</strong></p>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>
@@ -2965,7 +2944,6 @@ continents  # display the entire dataframe
 <p>8 rows × 95 columns</p>
 </div></div>
 </div>
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 <div class="section" id="plot-aggregated-features">
 <h4>plot aggregated features<a class="headerlink" href="#plot-aggregated-features" title="Permalink to this headline">¶</a></h3>
 <div class="nbinput docutils container">
@@ -2981,7 +2959,7 @@ continents  # display the entire dataframe
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_143_0.png" src="_images/geopandas-101-Copy1_143_0.png" />
+<img alt="_images/geopandas-101-Copy1_123_0.png" src="_images/geopandas-101-Copy1_123_0.png" />
 </div>
 </div>
 <p><strong>add color based on the pop_est for each continent display legend to the right of the plot</strong></p>
@@ -3006,13 +2984,12 @@ continents.plot(ax=ax, column = &#39;POP_EST&#39;, cmap=&#39;YlOrRd&#39;, alpha=
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_146_0.png" src="_images/geopandas-101-Copy1_146_0.png" />
+<img alt="_images/geopandas-101-Copy1_126_0.png" src="_images/geopandas-101-Copy1_126_0.png" />
+</div>
+</div>
 </div>
 </div>
 <hr class="docutils" />
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
-</div>
-</div>
 <div class="section" id="Creating-a-GeoDataFrame-from-a-DataFrame-with-coordinates">
 <h3>Creating a GeoDataFrame from a DataFrame with coordinates<a class="headerlink" href="#Creating-a-GeoDataFrame-from-a-DataFrame-with-coordinates" title="Permalink to this headline">¶</a></h2>
 <div class="nbinput nblast docutils container">
@@ -3770,11 +3747,10 @@ gdf.plot(ax=ax, linewidth=0.25, markersize=3.0, column = &#39;tiv_total_inc_dec&
 <div class="prompt empty docutils container">
 </div>
 <div class="output_area docutils container">
-<img alt="_images/geopandas-101-Copy1_171_0.png" src="_images/geopandas-101-Copy1_171_0.png" />
+<img alt="_images/geopandas-101-Copy1_151_0.png" src="_images/geopandas-101-Copy1_151_0.png" />
 </div>
 </div>
 <hr class="docutils" />
-<p><a class="reference external" href="#Table-of-Contents">top</a></p>
 </div>
 </div>
 </div>
