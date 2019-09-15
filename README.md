@@ -17,4 +17,5 @@ Maintaining the order of the above list during install will be helpful.
 
 For Anaconda environments use:
 
-```conda create --name 'your_env_name' jupyter jupyterlab pandas geopandas matplotlib gdal fiona geoplot mapclassify -y && conda activate 'your_env_name'```
+```conda create --name 'your_env_name' jupyter jupyterlab pandas geopandas matplotlib gdal fiona -y && conda activate 'your_env_name'```
+
